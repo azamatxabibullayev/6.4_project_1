@@ -1,0 +1,15 @@
+<title>Cars</title>
+
+<h1>Cars</h1><br>
+
+
+<body>
+{% for car in cars %}
+    <a href="{% url 'cars:detail' car.pk %}" >{{ car.model }}</a>
+{% endfor %}
+
+</body>
+
+
+
+
